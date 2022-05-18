@@ -1,3 +1,13 @@
+
+
+
+import user from './Profile/user.json';
+
+
+
+
+
+
 export const App = () => {
   return (
     <div
