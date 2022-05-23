@@ -9,6 +9,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flex: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
         color: '#010101'
