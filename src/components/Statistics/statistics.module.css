@@ -1,0 +1,21 @@
+.statistics{
+    margin: 0px 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.18em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+    
+}
+
+.statList{
+    display: flex;
+}

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './profile.css';
+import styles from './profile.module.css';
 
 export const Profile = ({
   username,
@@ -18,15 +18,15 @@ export const Profile = ({
         </div>
 
         <ul className={styles.stats}>
-          <li>
+          <li className={styles.statItem}>
             <span className={styles.label}>Followers</span>
             <span className={styles.quantity}>{followers}</span>
           </li>
-          <li>
+          <li className={styles.statItem}>
             <span className={styles.label}>Views</span>
             <span className={styles.quantity}>{views}</span>
           </li>
-          <li>
+          <li className={styles.statItem}>
             <span className={styles.label}>Likes</span>
             <span className={styles.quantity}>{likes}</span>
           </li>

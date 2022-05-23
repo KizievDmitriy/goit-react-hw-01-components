@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './statistics.css';
+import styles from './statistics.module.css';
 import { StatisticItem } from '../StatisticItem/statisticItem';
 
 export const Statistics = ({ title, stats }) => {
@@ -11,6 +11,9 @@ export const Statistics = ({ title, stats }) => {
             <li
               className={styles.item}
               key={id}
+              style={{
+                backgroundColor: getRandomHexColor(),
+              }}
             >
               <StatisticItem label={label} percentage={percentage} />
             </li>
@@ -27,3 +30,8 @@ Statistics.prototype = {
   ),
 };
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
