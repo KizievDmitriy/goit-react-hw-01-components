@@ -14,11 +14,7 @@ code {
     monospace;
 }
 
-/* img {
-  width: 100%;
-} */
-
-p {
+p, ul {
   margin: 0;
   padding: 0;
 }
